@@ -1,0 +1,81 @@
+! URXVT FONTS
+!------------------------------------------------
+
+URxvt*font: xft:Inconsolata:pixelsize=14, xft:FontAwesome:pixelsize=14
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14
+URxvt*letterSpace: 0
+URxvt*allow_bold: true
+
+
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+
+URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel
+URxvt.url-launcher: /usr/bin/chromium
+!tabbed
+URxvt.matcher.button:   1
+URxvt.keysym.M-u: perl:url-select:select_next
+
+!disable the fucking bell
+URxvt.insecure: 			false
+
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+
+URxvt*saveLines: 			300000
+URxvt.scrollBar: 			false
+!URxvt*scrollstyle:			plain
+URxvt*cursorBlink: 			false
+URxvt*cursorUnderline: 		true
+URxvt*cursorColor: 			#51c4d4
+
+! URXVT TABS
+!------------------------------------------------
+
+URxvt.tabbedex.autohide: 	yes
+URxvt.tabbedex.tabbar-fg: 	2
+URxvt.tabbedex.tabbar-bg: 	0
+URxvt.tabbedex.tab-fg:    	10
+URxvt.tabbedex.tab-bg:    	0
+URxvt.tabbedex.title: 		yes
+URxvt.tabbedex.new-button:  no
+
+! URXVT COLORS
+!------------------------------------------------
+URxvt*fading:                 0
+! special
+*.foreground:   #666666
+*.background:   #f7f7f7
+*.cursorColor:  #bec7d5
+
+! black
+*.color0:       #181c22
+*.color8:       #ee4ff5
+
+! red
+*.color1:       #20252c
+*.color9:       #EC709A
+
+! green
+*.color2:       #5c90d3
+*.color10:      #4A9BE0
+
+! yellow
+*.color3:       #6DB3A0
+*.color11:      #359fee
+
+! blue
+*.color4:       #5e6a7b
+*.color12:      #E98BEE
+
+! magenta
+*.color5:       #7e8ea3
+*.color13:      #50b63e
+
+! cyan
+*.color6:       #a9b6c8
+*.color14:      #64EF43
+
+! white
+*.color7:       #3E3E3E
+*.color15:      #EF439F

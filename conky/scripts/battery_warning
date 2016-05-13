@@ -1,0 +1,8 @@
+#!/bin/bash
+bat=$(acpi -b | cut -d" " -f4 | tr -d ',%')
+status=$(acpi -b | cut -d" " -f3 | tr -d ',')
+min=$(acpi -b | cut -d " " -f5 | cut -d":" -f2)
+if [ $bat -le 10 ] && [ "$status" != "Charging" ]
+then
+  notify-send "$bat% battery remaining!" "Will shut down in $min minutes." -i /usr/share/icons/Yltra\ Flat/status/scalable/battery-caution.svg
+fi

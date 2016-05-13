@@ -1,0 +1,28 @@
+#!/bin/bash
+
+weather_data=$(curl -s "http://api.openweathermap.org/data/2.5/forecast/city?id=2689287&units=metric&APPID=55358fb7cd44e933859d98c57c352694")
+
+declare -A icons
+icons[01d]=
+icons[01n]=
+icons[02d]=⛅
+icons[02n]=⛅
+icons[03d]=
+icons[03n]=
+icons[04d]=
+icons[04n]=
+icons[09d]=☔
+icons[09n]=☔
+icons[10d]=
+icons[10n]=
+icons[11d]=⛈
+icons[11n]=⛈
+icons[13d]=☃
+icons[13n]=☃
+icons[50d]=♒
+icons[50n]=♒
+
+
+temperature=$(echo $weather_data | jsawk 'return this.list[0].main.temp' | awk '{printf("%d\n",$1 + 0.5)}')
+icon=$(echo $weather_data | jsawk 'return this.list[0].weather[0].icon')
+echo ${icons[$icon]} $temperature°C
