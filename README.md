@@ -10,11 +10,17 @@ Firstly, huge thanks to /u/lovelybac0n for [a lot of inspiration](https://www.re
 + **Sublime**: [Material](https://github.com/equinusocio/material-theme)
 + **Irssi**: [Simplicity](https://irssi-import.github.io/themes/simplicity.theme)
 
+# Programs used
++ i3
++ conky
++ playerctl (for multimedia buttons)
++ amixer (alsa) (for volume buttons and volume in bar)
++ i3lock
++ scrot
+
 # Notes
-+ [playerctl](https://github.com/acrisci/playerctl) is used for multimedia keys.
-+ scrot is used for screenshots.
-+ Sound control and volume in the bar is for alsa based systems.
 + You'll probably want to edit conky/scripts/weather and update it with the correct city id from [this list](http://openweathermap.org/help/city_list.txt).
++ Now playing in the bar is for Spotify, if you use another player you'll have to edit conky.conf.
 
 # Screenshots
 ![Thunar](http://i.imgur.com/Hbuepwv.png)
