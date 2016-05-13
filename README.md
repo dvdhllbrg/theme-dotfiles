@@ -17,6 +17,7 @@ Firstly, huge thanks to /u/lovelybac0n for [a lot of inspiration](https://www.re
 + amixer (alsa) (for volume buttons and volume in bar)
 + i3lock
 + scrot
++ jsawk (for weather script)
 
 # Notes
 + You'll probably want to edit conky/scripts/weather and update it with the correct city id from [this list](http://openweathermap.org/help/city_list.txt).
